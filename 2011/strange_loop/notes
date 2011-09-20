@@ -272,4 +272,22 @@ HERESIES AND DOGMAS - DEAN WAMPLER (LOOK UP HTML5 and DISTRIBUTED SYSTEMS)
     Rich domain model means fewer fatter services
     Node.JS/Mongo -> uniform data model
 
-  Whether it's a dogma or branding is a matter of branding
+  Whether it's a dogma or heresies is a matter of branding
+
+EVENT-DRIVEN PROGRAMMING IN CLOJURE
+  sync is easy, async is more complex (looks like node)
+  often spend more time waiting on data than we fo computing our response
+  syncronous concurrency -> fork/join model
+    threads aren't free
+    thread pool
+    "someone is trying to be as clever as you"
+    nested concurrency
+  async exposes an inherent complexity
+  less leaky abstractions
+  sync/async not mutually exclusive
+  "complexity is local"
+  code expresses dependencies
+  looks like the async module
+  difficult to debug, complicated flows are still complicated
+
+
