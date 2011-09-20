@@ -1,0 +1,275 @@
+ERIC MEIJER ()MICROSOFT) - CATEGORY THEORY
+  BIG DATA - not only about size, it is about data diverstiy
+    interaction patterns between producers/consumers
+    Diff between FK and key/value store?
+    Design space that spans 3-d
+  NoSQL
+    co-sql
+    objects vs tables
+      memory is key/value store -> objects
+    Sql is imperative language (example -> inserting/updating)
+    arbitrarily deep hierarchy
+  SQL
+    not compositional
+    impedance mismatch -> ORM
+    indexes implicitedly make object model
+    
+  "Nothing new in CS, everything has been discovered 5 times"
+
+  Trade-offs between Sql/NoSql
+
+  Arrows reversed for nosql/sql
+
+  CATEGORY THEORY
+    interface for functions
+    compositional
+    "first OO programmers"
+    duality -> reverse the arrows, duo, the categories hold for both
+      de morgens law
+      can use scientific constraints to pick technology (instead of newness/hipness) -> more like scientists to reason about solutions
+
+  SQL vs NOSQL
+    Sql - children point to parent, cosql - patent point to childern
+    sql - entities have identity, cosql - environment (memory) determines identity
+    sql - environment coordingates changes, cosql - entities responsible to react to changes
+    sql - closed, co - open
+
+
+FUNCTIONAL THINKING - Neal Ford
+  not nouns, verbs -> just do it
+  took decades to use objects, don't see power, only see differences
+  started as academic offshot
+  scala, clojure, f#, plus erlang/haskell
+  Feathers - "OO makes coed understandable y encapsulating moving parts" -> visibility rules, facilities to manage changing state
+  "FP minimize moving oarts", fewer parts , easrier to reason
+  
+  The Productive Programmer -- TDD
+  6: 1 + 2 + 3 + 6 = (2x6) = 12
+  > 2*#: abundant
+  < 2*#: difficient
+
+  minimize shared state
+  no internal state
+  no scoping, all methods are public
+  pure functions -> only rely on paramaeters and return values
+  public and static
+  no information hiding
+  "more a way of thinking, than a particular toolset"
+
+  first-class/higher order functions
+  pure functions
+  prefer recursion over iteration
+  strict valuation
+  
+  think about results, not results
+  post-imperative world
+
+  fn becomoing popular b/c optimize person time, not optimized for CPU
+  lnguages handle garbage collction, concurrency, state, test, etc
+  thinking functionally
+    immutabliity over state transitions
+    "functional thinking" articles
+  "results over steps"
+  "composition over structure"
+  declarative over imperative
+  paradigm over tool
+
+  SUMMARY
+    new ways of thinking design
+    new tools for extions, reuse
+    immutable by default -> beneficial beginning steps
+    following the general trend in langugage design
+    enables new way sto view problems
+
+FOG OR HOW I LEARNED TO LOVE THE CLOUD - Wesley Beary (Geemus)
+  on demand, flexible, repeatable, resilient
+  why worry? option overload, expertise, tools have vastly different API/qualitiy, standards
+  "ORM for cloud services"
+  why? portable, owerful, established
+
+A TALE OF THREE TRESS - SCOTT CHACON
+  esoteric/abstract talk about git
+  git is... system for storing trees (files, sub-directories)
+  1st tree
+    head - pointer to last commit (a tree)
+    parent of next commit
+  2nd tree
+    the index (staging area)
+    single file manifest
+    git ls-files -s
+    propsed nex commit
+  3rd tree
+    working directory
+    still a snapshot
+    sandbox
+
+  WORKING WITH TREES
+    git status - difference between three tress
+
+  GIT RESET
+    tool to manipulate the three tress
+    git reset [commit] [path] -> opposite of git add
+    takes content from db (head) into index
+    git reset [commit] -> works on tress as a whole
+      --soft -> move HEAD to target
+        git reset --soft HEAD~ -> revert last commit
+      [--mixed] -> then copy to index (this is the default)
+        unstages everything
+        leaves working directory
+      --hard -> then copy to work dir (make all tress the same)
+
+      git add -p -> partial commits of logical changes
+
+    git commit --ammend
+      git soft, git ci
+
+    git reset --soft HEAD~2, git commit -> moves HEAD back, keeps index
+
+  GIT CHECKOUT
+    moves branch that HEAD points to
+    git checkout [commit] [path] 
+
+  FUN WITH YOUR TREES
+    git add --patch [file]
+    git reset --patch (commit) [file]
+    git checkout --patch (commit) [file]
+    git rev-parse -> sha for commit
+    git hash-object -> basically what git add does
+    git ls-tree/cat-file -> tree objects
+    git ls-files -s -> staging area
+    git read-tree -> subset of reset
+    git update-index
+    git write-tree
+    git commit-tree
+    git symbolic-ref
+
+COFFEESCRIPT - JEREMY ASHKENAS
+  stay true to JS
+
+  STARTED
+    started as potion-y
+    Ruby compiler
+
+  0.5
+    wrote CS in CS
+    "People shouldn't be compilers, computers are better at it"
+
+  Take JS design pattern, and see the minimalist, easiest way to do them
+
+  CS = Syntax + semantics + goodies
+
+  Binding this in current js is un-usable b/c of the way prototypes are set up
+
+  BUILD YOUR OWN JAVASCRIPT
+
+GETTING TRUTH OUT OF THE DOM - YEHUDA KATZ
+  Advanced javascript applications
+  source of truth for data
+
+  1st step -> evented jquery
+    fire higher-level event which updates DOM
+    reduces coupling
+    better set of events
+    click on this DOM, update this DOM -> blerg
+
+  WIDGETS
+    wrap DOM in object
+  
+  ENCAPSULATE state of single view
+    manage "views"
+    seperate object that represents reality
+
+  MODELS and OBSERVERS
+    multiple observers on a model
+
+    INTERMEDIATE STATE
+      batched operations -> event on particular checkbox for bulk operations
+
+    1:1 MODEL/VIEW COUPLING
+      a data object "has an element"
+
+  A PROBLEM
+    application state
+    reverse engineer information from aggregates
+
+  EDGE CASES
+    Mark all checkbox
+      add new todo
+      check todo
+
+  REALITY, VIEW, MEDIATING SPACE -> MVC
+    too many acronyms (MVP, MVVM, etc) pseudo-rant :)
+
+    "Don't actually need a C because we are too hipster"
+
+  SPROUTCORE
+    MVC auto-sync layer
+    you declare linkage, SC keeps layers in sync
+    handles batches
+    layer of abstraction
+    changes buffered between layers
+
+    TEMPLATING
+      had problems with ajax requests to update DOM, but new version deals better
+      describes living state of DOM, not just first view with more html for updates
+
+    MAGIC!
+
+WE DON"T KNOW HOW TO COMPUTE - SUSSMAN
+  Human genome is 1 GB - same as MS Windows
+    flexible
+    neighboring cells talk to each other
+  intuitions about programming come from a time of scarcity (CPU, memory) -- no need to optimize anymore
+  minimze latency, though
+  real cost is cost of programmers
+  pundits worry 
+    about correctness, needs reasonable
+    security -> humans deal with mutating parasites for 70+ years
+
+  spend all time modifing existing code
+  good for problems the designer didn't intend
+  programming into holes
+  consequences of changes aren't so expensive
+
+  dynamically add methods at runtime
+    flexibility
+    pay proof of correctness for flexibility
+    proofs force specs to be as tight as positive
+      brittle
+
+  "I hate all computer lanugages nowadays, even the ones I invent"
+  "A real engineer doesn't want a religion to solve a problem, like, OO, FP, imperative, procedural." 
+  Real engineers want to use the correct solution for the particular problem
+  Silly to worry about type system
+
+  Filling in details from local information
+
+  Problem is Evolvibility, not correctness
+
+HERESIES AND DOGMAS - DEAN WAMPLER (LOOK UP HTML5 and DISTRIBUTED SYSTEMS)
+  Software is faih-based
+
+  GOTO
+  DESIGN BEFORE CODE
+    Do the change at the right possible time
+  DESIGN PATTERNS
+    Solution ot a problem in a context
+    Some languages fix patterns - Lisp
+    Lisp has their own patterns, they just have different terms
+    Specific patterns come and go
+  CORBA vs REST
+    Corba - binary, interface instability
+      objects are not very modular
+        interface, composable, reusable
+      fundamental flaws
+    Exmaple of modularity
+      digital circuits
+      http
+    OO
+      "Unconstrained freedom to create abstraction undermines reuse" -> constraints help with modularity
+  OBJECT IDDLEWARE AND ORMs
+    largely contextual whether it is a good idea or not
+    Rich domain model means fewer fatter services
+    Node.JS/Mongo -> uniform data model
+
+  Whether it's a dogma or branding is a matter of branding
