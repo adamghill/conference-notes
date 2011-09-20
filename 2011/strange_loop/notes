@@ -416,3 +416,37 @@ POST-PC COMPUTING IS NOT A VISION - Allen Wirfs-Brock (Mozilla)
   identity, privacy
 
   Need revolutionaries and dreamers
+
+INFOQ.COM -> for StrangeLoop videos
+
+SIMPLE MADE EASY - RICH HICKEY
+  "Simplicity is prerequsite for relibility" - Djikstra
+
+  WORD ORIGINS
+    simple -> one twist/braid/fold
+    complex -> many folds
+    easy -> lie near
+    hard ->
+
+  SIMPLE
+    lack of interleaving, not cardinality
+    objective
+
+  EASY (relative)
+    near, at hand
+      in our toolset, IDE, etc
+    near to our understanding, that we alreay know, familar
+      self-involved to get things instantly
+      never learn anything know
+    near our capabilities
+      tramples on our egos
+
+  CONSTRUCT vs ARTIFACT
+    program with constructs
+      programmer convenience
+      programmer replaceability
+    in the business of artifacts -> users don't care of sourcecode
+    long term results of use
+      quality, correctness
+      maintanance, change
+    must assess constructs by their artifacts
