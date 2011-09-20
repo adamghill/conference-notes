@@ -348,4 +348,71 @@ PRODUCT ENGINEERING
   amsterdam sounds awesome
 
 POST-PC COMPUTING IS NOT A VISION - Allen Wirfs-Brock (Mozilla)
+  No idea of where we are going
+  Post-mainframe era?
+  computing era based on impact on society
+    corporate computing, personal computing
+  this new era
+    mobile, cloud, tablet, games/media, 
+    
+    SOME ORGANIZATIONS
+      how do you monaitze user? might not be the best
+
+  AMBIENT ERA
+    centrally augment everyday life of individuals
+    ubiquitous availability
+    pervasive
+    nano on wrist watch, earphones in glasses -> enhance world
+
+  TRANSITIONAL TECHNOLOGIES
+    rooted in present
+    has characteristics of era to come
+
+    MAINFRAME
+      timesharing
+      shrinking the size of the computers (minicomputer)
+    AMBIENT
+      cell phones
+        always with you, connected
+      WWW/browers
+        availability more important than performance
+        universal presentation platform
+      when something becomes ubiquitous, it disappears
+
+  DOMINANT APPLICATION PLATFORM
+    corporate -> IBM Mainframe
+    personal -> Microsoft
+    ambient -> JavaScript?
+      web apps vs native apps
+      could there be an era based on open standards?
+
+  CANONCIAL PROGRAMMING LANGUAGE
+    corporate - COBOL/Fortran
+    personal - C
+    ambient - javascript
+
+  JAVASCRIPT
+    ecmascript
+      interoperability is highest priority
+    harmony
+      be better for:
+        complex applications
+        libraries (including the DOM) shared by apps
+        code generators
+        SmallTalk to JavaScript -> http://amber-lang.net/index.html
+      modules, namespaces
+      sand-boxing module loaders
+      proxy obejcts
+      control abstractions via iterators and generators
+      array comprehensions, string interpolation
+      super references
+      encapsulated state via private names
+      better support for class-style inheritance
   
+  USERS: Customers or merchandise?
+    are we building devices and services that empower people?
+    build systems we would want to use
+    keep user in control
+  identity, privacy
+
+  Need revolutionaries and dreamers
