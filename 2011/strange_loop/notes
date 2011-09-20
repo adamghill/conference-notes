@@ -290,4 +290,62 @@ EVENT-DRIVEN PROGRAMMING IN CLOJURE
   looks like the async module
   difficult to debug, complicated flows are still complicated
 
+STAGE-CRAFT IN UX (ALSO LOOK AT TALE OF TWO RUNTIMES - MOJITO)
+  Experience is actually psychology
+  user-interface, as known as UI "user illusion"
 
+  PREPARE
+    consider the stage and the audience
+    Effects are different based on scale
+      phone/tablet/PC
+  PRACTICE * 3
+    practice until you have it perfect, then practice 100 more times
+    magic: makes the trick look natural
+    testing/alpha/beta
+  OVERCOME OBJECTS BEFORE THEY ARISE
+    magic: hyponotize assistant before sawing in half
+    logins (facebook/twitter/yahoo/open id)
+      remove barriers
+  PERFORM
+    patter and showmanship - presentation as important as content
+    soda jerkers - best performance
+    users care about experience, not mechanics
+  SLIGHT OF HAND (TIMING MATTERS)
+    brains edit out certain details, to make it understand reality
+    1/tenth of a second
+      direct manipulation - instant
+    full second
+      uninterrupted flow - notice lag, but still involved in process
+    10 seconds
+      keeps attention - user's mind start wander
+  DIRECTION
+    divert attention
+    call to action -> color, whitespace
+    brains evolved to track motion
+      notification
+    recognize faces
+      status lines on twitter/facebook/linkedin
+  MISDIRECTION
+    all magic is misdirection
+
+    simulation - trash can for deleting
+      metaphor
+      skeumorph
+        floppy disk
+        rivet on jeans
+        ibook
+      dissimulation
+        web applications - make web apps look like desktop apps
+        key in on little details
+      anticipation
+        progress bar in web apps
+  TWO WORLDS
+    world of the end user (performance)
+    world of the developer (performer)
+
+PRODUCT ENGINEERING
+  appsterdam
+  amsterdam sounds awesome
+
+POST-PC COMPUTING IS NOT A VISION - Allen Wirfs-Brock (Mozilla)
+  
