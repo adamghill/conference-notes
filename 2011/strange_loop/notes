@@ -450,3 +450,186 @@ SIMPLE MADE EASY - RICH HICKEY
       quality, correctness
       maintanance, change
     must assess constructs by their artifacts
+
+  LIMITS
+    only hope to make realible those things we can understand
+    only consider a few things at a time
+    intertwined things must be considered together
+    complexity undermines understanding
+
+  CHANGE
+    changes to software require analysis and decisions
+    what will be impacted
+    where do changes need to be made
+    need to reason about program
+    informal reasoning
+
+  DEBUGGING
+    every bug in the field
+      passed the type checker
+      passed the tests
+    guardrail world
+      don't help you get to where to go
+      need to reason about program
+
+  DEVELOPMENT SPEED
+    emphasizing ease gives early speed
+    "fire starter pistol every 100 yards"
+    ignore complexity will slow you down over the long haul
+    throwaway/trivial projects, nothing much matters
+
+  EASY YET COMPLEX
+    complicating constructs are
+      succinctly described, familiar, available, easy to use
+    what matters is the complexity they yield
+      complexity is incidental
+      incidental -> "your fault" -> programming with a loom
+
+  BENEFITS OF SIMPLICITY
+    easy of understanding
+    ease of change
+    easier debugging
+    flexibility
+      policy
+      location
+
+  MAKING THINGS EASY
+    installing
+    become familiar by learning, trying
+    mental capability
+      make things near by simplifying them
+      everyone is statistically at the same point
+
+  PARENS ARE HARD!
+    not at hand for most
+    not familiar
+    CL/Scheme
+      overloaded parens used for calls and grouping and data structures
+      adding a new data structure makes things simplier
+
+  "LISP programmers know the value of everything and the cost of nothing" - Alan Perlis
+    performance cost
+    never any trade-offs, only for benfits
+
+  COMPLEXITY
+    state, objects
+    methods
+    variables
+    inheritance, switch, matching
+    syntax
+    imperative loops, fold
+    actors
+    ORM
+    conditions
+    inconsistency
+
+  SIMPLE
+    vlaues
+    functions, namespaces
+    managed refs
+    polymorphism
+    data
+    set functions
+    queues
+    declarative data manipulation
+    rules
+    consistency
+
+  COMPLECT
+    -> to interleave, entwine, braid
+    complecting things is the source of complexity
+    best to avoid in the first place
+
+  COMPOSE
+    -> to place together
+    compossing simple components is the key to robust software
+
+  MODULARITY AND SIMPLICITY
+    all done! so simple
+    partitioning and stratification don't imply simolicity
+      but they are enabled by it
+      code organization
+
+  STATE IS NEVER SIMPLE
+    complects value and time
+    it _is_easy, familiar
+    interleaves everything that touches it, directly or indirectly
+      not mitigated by modules, encapsulation
+    this has nothing to so with async
+    same input -> same output
+
+  NOT ALL RES/VARS ARE EQUAL
+    none makes state simple
+
+  POLYMORPHISM ala carte
+    protocols, type classes
+
+  ENVIRONMENTAL COMPLEXITY
+    resources
+    inherant complexity in implemtation space
+      all components contend for them
+    segmentation
+      waste
+    individual policies don't compose
+
+  MAKING THINGS SIMPLE
+    abstract -> drawn away, from the physical nature
+    vs Abstraction as complexity hiding
+    "I don't know, I don't want to know"
+
+    WHAT
+      operations
+      form abstrctions from related sets of functions
+        small sets (interfaces, prototypes, specifications)
+      polymorphism
+      inputs, outputs, semantics
+
+    WHO
+      entities implementing abstractions
+      DI from subcomponents
+        small interfaces
+        e.g. policy
+        beware of component details
+
+    HOW
+      implementing
+      abstractions and entities via polymorphism
+      declaritive
+
+    WHEN/WHERE
+      strenuously avoid complecting these with anything
+      can seep in via directly connected objects
+        queues
+
+    WHY
+      policiy and rules of application
+      often strewn everywhere
+        complected with control flow
+
+    INFORMATION _IS_ SIMPLE
+      don't ruin it
+      objects shouldn't be applied to information
+        thwarts generic data composition
+        ties logic to representation du jour
+      represent data as data
+
+  SIMPLIFYING
+    disentangle
+    identify threads
+
+  SIMPLICITY IS A CHOICE
+    culture of complexity
+    requires vigilence, sensibilities and care
+    simplicity != ease/familiarity
+      develop sensibilties around entanglement
+    reliability tools don't care; just safety nets
+
+  SIMPLICITY MADE EASY
+    choose simple constructs
+      it is the artifacts, not eh authoring
+    create abstractions with simplicity as basis
+    simplify problem space
+    simplicity often means making more things, not fewer
+    reap the benefits
+
+  "Simplicity is the ultimate sophistication" - da Vini
